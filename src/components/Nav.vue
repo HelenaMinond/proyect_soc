@@ -5,11 +5,9 @@
         <img src="../assets/logo-proyecto.png" alt="Logo" />
       </div>
       <div class="nav__content--opc">
-        <!-- <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link> -->
-        <p>Inicio</p>
-        <p>Cursos</p>
-        <i class="fas fa-user"></i>
+        <p class="opc-1">Inicio</p>
+        <p class="opc-2">Cursos</p>
+        <i class="opc-3 fas fa-user"></i>
       </div>
     </div>
   </div>
@@ -22,15 +20,27 @@ export default {
 </script>
 
 <style lang="scss">
+.nav {
+  border-bottom: 2px solid #E5E5E5;
+  margin: 1rem 0;
+}
 .nav > div {
   display: flex;
-  border: 1px solid gray;
 }
 .nav__content {
   justify-content: space-between;
 }
+.nav__content--logo, .nav__content--opc {
+  margin: 0 2rem;
+}
 .nav__content--opc {
   display: flex;
   flex-direction: row;
+}
+.opc-1, .opc-2, .opc-3 {
+  margin: 0 2rem;
+}
+.opc-2 {
+  color: #3434FF;
 }
 </style>

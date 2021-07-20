@@ -2,9 +2,9 @@
   <div class="footer">
     <div class="footer__content">
       <div class="footer__content--links">
-        <p>Términos y condiciones</p>
-        <p>Privacidad</p>
-        <p>Soporte</p>
+        <p class="link">Términos y condiciones</p>
+        <p class="link">Privacidad</p>
+        <p class="link">Soporte</p>
       </div>
       <div class="footer__content--contact">
         <p>Socialab.cl</p>
@@ -32,6 +32,7 @@ export default {
   width: 100%;
   background-color: #262626;
   color: white;
+  padding: 3rem 8rem;
 }
 .footer__content {
   display: grid;
@@ -44,5 +45,11 @@ export default {
 }
 .footer__content--contact {
   justify-content: flex-end;
+}
+.link {
+  text-decoration: underline;
+}
+p, i {
+  margin: 0 1rem;
 }
 </style>
