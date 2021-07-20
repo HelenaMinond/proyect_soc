@@ -1,0 +1,48 @@
+<template>
+  <div class="footer">
+    <div class="footer__content">
+      <div class="footer__content--links">
+        <p>Términos y condiciones</p>
+        <p>Privacidad</p>
+        <p>Soporte</p>
+      </div>
+      <div class="footer__content--contact">
+        <p>Socialab.cl</p>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Footer",
+};
+</script>
+
+<style lang="scss">
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #262626;
+  color: white;
+}
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer__content--links,
+.footer__content--contact {
+  display: flex;
+  flex-direction: row;
+}
+.footer__content--contact {
+  justify-content: flex-end;
+}
+</style>
