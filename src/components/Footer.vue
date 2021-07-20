@@ -49,7 +49,8 @@ export default {
 .link {
   text-decoration: underline;
 }
-p, i {
+p,
+i {
   margin: 0 1rem;
 }
 </style>

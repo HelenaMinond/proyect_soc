@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss">
 .nav {
-  border-bottom: 2px solid #E5E5E5;
+  border-bottom: 2px solid #e5e5e5;
   margin: 1rem 0;
 }
 .nav > div {
@@ -30,17 +30,20 @@ export default {
 .nav__content {
   justify-content: space-between;
 }
-.nav__content--logo, .nav__content--opc {
+.nav__content--logo,
+.nav__content--opc {
   margin: 0 2rem;
 }
 .nav__content--opc {
   display: flex;
   flex-direction: row;
 }
-.opc-1, .opc-2, .opc-3 {
+.opc-1,
+.opc-2,
+.opc-3 {
   margin: 0 2rem;
 }
 .opc-2 {
-  color: #3434FF;
+  color: #3434ff;
 }
 </style>
