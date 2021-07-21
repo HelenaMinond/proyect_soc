@@ -1,26 +1,51 @@
 <template>
-  <div class="cards">
-    <div class="cards__primera" v-for="(val, i) in cartas" :key="i">
-      <h2>{{ val.name }}</h2>
-      <img :src="val.imageUrl" alt="Imagen carta" />
-      <p>{{ val.text }}</p>
+  <div>
+    <div class="form">
+      <input type="number" v-model="card" />
+      <button @click="obtenerCart()">Buscar</button>
+    </div>
+    <div class="cards">
+      <div class="cards__primera">
+        <h2>{{ nameCard }}</h2>
+        <img :src="imgCard" alt="Imagen carta" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import { mapState, mapActions } from "vuex";
+import axios from "axios";
 
 export default {
   name: "Header",
+  data() {
+    return {
+      card: "1",
+      data: "",
+    };
+  },
   computed: {
-    ...mapState(["cartas"]),
+    nameCard() {
+      return this.data && this.data.name;
+    },
+    imgCard() {
+      return this.data && this.data.imageUrl;
+    },
   },
   methods: {
-    ...mapActions(["obtenerDataAPI"]),
+    async obtenerCart() {
+      const url = "https://api.magicthegathering.io/v1/cards/";
+      try {
+        const req = await axios(url + this.card);
+        if (!req) return;
+        this.data = req.data.card;
+      } catch (error) {
+        console.log(error);
+      }
+    },
   },
   created() {
-    this.obtenerDataAPI();
+    this.obtenerCart();
   },
 };
 </script>
@@ -41,6 +66,7 @@ export default {
 }
 h2 {
   margin: 1rem 0;
+  color: #fff;
 }
 p {
   text-align: justify;
