@@ -7,7 +7,7 @@
       <div class="nav__content--opc">
         <p class="opc-1">Inicio</p>
         <p class="opc-2">Cursos</p>
-        <i class="opc-3 fas fa-user"></i>
+        <div class="opc-3"><i class="fas fa-user"></i></div>
       </div>
     </div>
   </div>
@@ -22,17 +22,14 @@ export default {
 <style lang="scss">
 .nav {
   border-bottom: 2px solid #e5e5e5;
-  margin: 1rem 0;
+  padding: 1rem 2rem;
 }
 .nav > div {
   display: flex;
 }
 .nav__content {
   justify-content: space-between;
-}
-.nav__content--logo,
-.nav__content--opc {
-  margin: 0 2rem;
+  align-items: center;
 }
 .nav__content--opc {
   display: flex;
@@ -45,5 +42,10 @@ export default {
 }
 .opc-2 {
   color: #3434ff;
+}
+.opc-3 i {
+  background-color: #edf2f7;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 </style>
