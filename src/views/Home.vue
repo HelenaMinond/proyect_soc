@@ -2,6 +2,7 @@
   <div>
     <Nav />
     <Header />
+    <Cards />
     <Footer />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import Nav from "@/components/Nav.vue";
 import Header from "@/components/Header.vue";
+import Cards from "@/components/Cards.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     Nav,
     Header,
+    Cards,
     Footer,
   },
 };

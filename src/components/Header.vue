@@ -1,8 +1,12 @@
 <template>
   <div class="header">
     <h1>Cursos</h1>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt assumenda adipisci, nesciunt, soluta modi ex, possimus eos id doloremque doloribus. Blanditiis excepturi vitae?</p>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt
+      assumenda adipisci, nesciunt, soluta modi ex, possimus eos id doloremque
+      doloribus. Blanditiis excepturi vitae?
+    </p>
   </div>
 </template>
 
@@ -21,14 +25,12 @@ export default {
 }
 hr {
   width: 5%;
+  border: 1.5px solid #3434ff;
+  background: #3434ff;
+  margin: 1.5rem 0;
 }
 p {
   line-height: 1.6;
   text-align: center;
-}
-hr{
-   border: 1.5px solid #3434FF;
-   background: #3434FF;
-   margin: 1.5rem 0;
 }
 </style>
