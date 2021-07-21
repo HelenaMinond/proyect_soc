@@ -50,4 +50,13 @@ p,
 i {
   margin: 0 1rem;
 }
+@media (max-width: 991.98px) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .footer__content--links {
+    display: none;
+  }
+}
 </style>

@@ -33,4 +33,17 @@ p {
   line-height: 1.6;
   text-align: center;
 }
+@media (max-width: 767.98px) {
+  .header {
+    margin: 4rem 10rem 6rem 10rem;
+  }
+  hr {
+    width: 10%;
+  }
+}
+@media (max-width: 575.98px) {
+  .header {
+    margin: 4rem 6rem 6rem 6rem;
+  }
+}
 </style>
