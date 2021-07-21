@@ -21,7 +21,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem 15rem;
+  margin: 4rem 15rem 6rem 15rem;
 }
 hr {
   width: 5%;
